@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="bg-primary grid grid-cols-1 sm:grid-cols-2 gap-[10%]">
         {/* className="bg-primary flex justify-between gap-[10%]" */}
         <div className="px-10 my-auto">
-          <h1 className="font-9 text-[30px] leading-30px font-Lato ">
+          <h1 className="font-9 text-[30px] leading-30px font-Lato sm:mt-0 mt-5">
             We Care About You
           </h1>
           <p className="font-4 text-18px leading-28px mb-[30px] pr-10 mt-1 font-Lato text-navigation">

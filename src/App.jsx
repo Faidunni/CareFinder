@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Hero from "./components/Hero/Hero";
 import AboutUs from "./components/About/AboutUs";
-import HospitalSearch from "./components/Search/HospitalSearch";
+// import HospitalSearch from "./components/Search/HospitalSearch";
 import HowToSignUp from "./components/How/HowToSignUp";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Footer from "./components/Footer/Footer";
@@ -13,9 +13,14 @@ import ForgotPassword from "./components/Pages/ForgotPassword";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { auth } from "./components/Auth/firebase";
+import NavBar from "./components/NavBar/NavBar";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import HospitalList from "./components/HospitalResult/HospitalList";
 
 const App = () => {
   const [user, setUser] = useState();
+  const [searchResult, setSearchResult] = useState([]);
+
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       setUser(user);
@@ -24,21 +29,43 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
-
+        <Route
+          path="/"
+          element={
+            <Dashboard
+              searchResult={searchResult}
+              setSearchResult={setSearchResult}
+            />
+          }
+        />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/forgot" element={<ForgotPassword />} />
-        <Route path="/hero" element={user ? <Navigate to="/" /> : <Hero />} />
+        <Route
+          path="/navbar"
+          element={user ? <Navigate to="/" /> : <NavBar />}
+        />
+        <Route path="/hospital-list" element={<PrivateRoute />}>
+          <Route
+            path="/hospital-list"
+            element={
+              <HospitalList
+                searchResult={searchResult}
+                setSearchResult={setSearchResult}
+              />
+            }
+          />
+        </Route>
+        <Route path="/hero" element={<Hero />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/how-to" element={<HowToSignUp />} />
-        <Route path="/search" element={<HospitalSearch />} />
+
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/footer" element={<Footer />} />
       </Routes>
       <ToastContainer
         position="top-center"
-        autoClose={8000}
+        autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

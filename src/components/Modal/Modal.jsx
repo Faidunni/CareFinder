@@ -5,7 +5,7 @@ import LogOut from "../Pages/LogOut";
 import { auth } from "../Auth/firebase";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { AiOutlineFrown } from "react-icons/ai";
+import cat from "../../assets/images/cat.png";
 
 function Modal() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -28,28 +28,27 @@ function Modal() {
     <div className="App">
       <div className="group">
         <button
-          className="flex bg-black border-2 rounded-full px-3 py-2 gap-2 group-hover:text-black"
+          className="flex bg-transparent border-2 rounded-full px-3 py-2 gap-2 group-hover:text-black border-navigate"
           onClick={openModal}
         >
-          <RxHamburgerMenu className="text-white font-bold" />
-          <RxAvatar className="text-white font-bold" />
+          <RxHamburgerMenu className="text-black font-bold" />
+          <RxAvatar className="text-black font-bold" />
         </button>
       </div>
 
       <LogOut isOpen={isModalOpen} onClose={closeModal} className="text-center">
-        <h2 className="text-lg font-bold mb-4">Modal Title</h2>
+        <div className="flex justify-center flex-col items-center">
+          <img src={cat} alt="sad cat" className="w-[300px] mb-2" />
 
-        <span>
-          <p className="mb-4">
-            Don't leave please <AiOutlineFrown className="text-5xl" />
-          </p>
-        </span>
-        <button
-          className="bg-black text-white rounded-lg w-[150px] h-[59px] mx-auto"
-          onClick={handleLogout}
-        >
-          Logout
-        </button>
+          <p className="mb-4 text-3xl">Don't leave please 😪</p>
+
+          <button
+            className="bg-gray-300 hover:bg-gray-400  text-BLACK rounded-lg w-[150px] h-[59px] mx-auto text-xl font-9"
+            onClick={handleLogout}
+          >
+            Log Out
+          </button>
+        </div>
       </LogOut>
     </div>
   );

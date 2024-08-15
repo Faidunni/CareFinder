@@ -19,9 +19,9 @@ const LogOut = ({ isOpen, onClose, children }) => {
 
   return (
     <div className="fixed inset-0 bg-black backdrop-blur-sm bg-opacity-30 flex items-center justify-center z-10">
-      <div className="bg-white rounded-lg p-4 w-full max-w-md">
+      <div className="bg-white rounded-lg p-4 w-full max-w-md py-10">
         <button
-          className="text-gray-500 hover:text-gray-700 absolute top-2 right-2 text-5xl"
+          className="text-gray-500 hover:text-gray-700 absolute sm:top-2 sm:right-2 text-5xl top-1"
           onClick={onClose}
         >
           &times;

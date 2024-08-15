@@ -13,6 +13,7 @@ export default {
         card: "#FCFCFD",
         text: "#00000066",
         heading: "#00000099",
+        content: "#E4E7EC",
       },
       width: {
         "100p": "100%",
@@ -21,6 +22,7 @@ export default {
         Lato: ["Lato"],
         Rochester: ["Rochester"],
         Montserrat: ["Montserrat"],
+        Roboto: ["Roboto"],
       },
       fontWeight: {
         9: "900",

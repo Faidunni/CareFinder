@@ -29,7 +29,7 @@ const SliderCard = () => {
               <img
                 src={card1}
                 alt=""
-                className="lg:w-[100px] lg:h-[100px] rounded-full object-contain"
+                className="w-[100px] h-[100px] rounded-full object-contain"
               />
             </div>
             <div className="mt-[15px]">

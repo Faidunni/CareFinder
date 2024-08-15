@@ -30,7 +30,7 @@ const PageNav = () => {
         </h1>
       </Link>
 
-      <div className="list">
+      <div className="flex gap-6">
         <ul className="sm:flex hidden items-center text-navigation gap-6">
           {Menu.map((data) => (
             <li key={data.id}>
@@ -42,14 +42,14 @@ const PageNav = () => {
               </a>
             </li>
           ))}
-
-          <div className="group">
-            <button className="flex bg-black border-2 rounded-full px-3 py-2 gap-2 group-hover:text-black">
-              <RxHamburgerMenu className="text-white font-bold" />
-              <RxAvatar className="text-white font-bold" />
-            </button>
-          </div>
         </ul>
+
+        <div className="group">
+          <button className="flex bg-black border-2 rounded-full px-3 py-2 gap-2 group-hover:text-black">
+            <RxHamburgerMenu className="text-white font-bold" />
+            <RxAvatar className="text-white font-bold" />
+          </button>
+        </div>
       </div>
     </nav>
   );

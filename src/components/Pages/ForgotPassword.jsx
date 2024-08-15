@@ -1,12 +1,29 @@
 import React, { useState } from "react";
 import { IoClose } from "react-icons/io5";
-import { FaInstagramSquare, FaFacebook, FaTwitterSquare } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Footer from "../Footer/Footer";
 import PageNav from "./PageNav";
+import { sendPasswordResetEmail } from "firebase/auth";
+import { auth } from "../Auth/firebase";
+import { toast } from "react-toastify";
 
 const ForgotPassword = () => {
+  const [email, setEmail] = useState("");
+
+  const navigate = useNavigate();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await sendPasswordResetEmail(auth, email);
+      toast.success("Check Email!");
+      navigate("/");
+    } catch (error) {
+      toast.error("couldn't send mail");
+    }
+  };
+
   return (
     <main className="bg-primary">
       <div className="border-b-2 border-white">
@@ -23,7 +40,11 @@ const ForgotPassword = () => {
         <h2 className="font-Montserrat text-[24px] font-bold text-center">
           Enter your details
         </h2>
-        <form action="#" className="mt-[30px]">
+        <form
+          action="#"
+          className="mt-[30px]"
+          onSubmit={(e) => handleSubmit(e)}
+        >
           <div className="mb-10">
             <label className="text-[12px] font-Montserrat font-bold">
               YOUR PHONE/EMAIL
@@ -31,7 +52,9 @@ const ForgotPassword = () => {
             <input
               type="email"
               placeholder="name@email.com"
-              className="w-[100%] px-3 py-2 outline-none shadow-xl mt-[5px] border-b-2 border-black rounded-b-xl"
+              className="w-[100%] px-3 py-2 outline-none shadow-sm mt-[5px] border-b-2 border-black rounded-b-xl"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 
