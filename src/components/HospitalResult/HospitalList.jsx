@@ -93,11 +93,11 @@ const HospitalList = ({ searchResult, setSearchResult }) => {
   return (
     <>
       <NavBar />
-      <div className="relative group lg:w-[1200px] w-full  sm:mx-auto lg:mx-auto md:mx-auto mx-5 my-5">
+      <div className="relative group lg:w-[1200px] w-[400px]  sm:mx-auto lg:mx-auto md:mx-auto mx-5 my-5">
         <input
           type="text"
           placeholder="Enter location, a zip code, city or State"
-          className="lg:w-[1200px] w-full rounded-full border border-gray-300 py-3 px-5 focus:outline-none focus:border-1 font-Lato font-4 shadow-lg"
+          className="lg:w-[1200px] w-[400px] rounded-full border border-gray-300 py-3 px-5 focus:outline-none focus:border-1 font-Lato font-4 shadow-lg"
           onChange={handleInputChange}
           value={inputValue}
         />
