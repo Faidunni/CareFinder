@@ -12,7 +12,7 @@ const HowToSignUp = () => {
           {" "}
           Got a Hospital to list?
         </h1>
-        <div className="absolute bottom-[1%] lg:top-[9%] lg:right-[15%] sm:mb-[10px] md:top-[9%] md:right-[5%]">
+        <div className="absolute bottom-[1%] lg:top-[9%] lg:right-[15%] mb-[10px] md:top-[9%] md:right-[5%]">
           <NavLink to="/login">
             <button className="font-7 font-Lato text-16px leading-24px bg-black text-secondary px-8 py-3 rounded-full">
               Get Started Now
