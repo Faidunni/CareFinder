@@ -16,7 +16,7 @@ const SliderCard = () => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2500,
     pauseOnHover: true,
     autoplay: true,
   };
