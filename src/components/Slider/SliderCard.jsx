@@ -29,7 +29,7 @@ const SliderCard = () => {
               <img
                 src={card1}
                 alt=""
-                className="w-[100px] h-[100px] rounded-full object-contain"
+                className="w-[100px] h-[100px] rounded-full object-contain border-2"
               />
             </div>
             <div className="mt-[15px]">
@@ -56,7 +56,7 @@ const SliderCard = () => {
               <img
                 src={card2}
                 alt=""
-                className="w-[100px] h-[100px] rounded-full object-contain"
+                className="w-[100px] h-[100px] rounded-full object-contain border-2"
               />
             </div>
             <div className="mt-[15px]">
@@ -83,7 +83,7 @@ const SliderCard = () => {
               <img
                 src={card3}
                 alt=""
-                className="w-[100px] h-[100px] rounded-full object-contain"
+                className="w-[100px] h-[100px] rounded-full object-contain border-2"
               />
             </div>
             <div className="mt-[15px]">
@@ -110,7 +110,7 @@ const SliderCard = () => {
               <img
                 src={card4}
                 alt=""
-                className="w-[100px] h-[100px] rounded-full object-contain"
+                className="w-[100px] h-[100px] rounded-full object-contain border-2"
               />
             </div>
             <div className="mt-[15px]">
@@ -137,7 +137,7 @@ const SliderCard = () => {
               <img
                 src={card5}
                 alt=""
-                className="w-[100px] h-[100px] rounded-full object-contain"
+                className="w-[100px] h-[100px] rounded-full object-contain border-2"
               />
             </div>
             <div className="mt-[15px]">
@@ -158,13 +158,13 @@ const SliderCard = () => {
             elit.
           </p>
         </div>
-        <div className="lg:px-[150px] lg:py-[60px] px-[40px] py-[40px]">
-          <div className="flex gap-4 mb-[10px]">
+        <div className="lg:px-[150px] lg:py-[60px] px-[40px] py-[40px] ">
+          <div className="flex-row flex gap-4 mb-[10px]">
             <div>
               <img
                 src={card6}
                 alt=""
-                className="w-[100px] h-[100px] rounded-full object-contain "
+                className="w-[100px] h-[100px] rounded-full object-contain border-2"
               />
             </div>
             <div className="mt-[15px]">
@@ -174,16 +174,18 @@ const SliderCard = () => {
               <p className="text-text">Therapist</p>
             </div>
           </div>
-          <h2 className="font-Lato font-7 text-[27px] mb-[5px]">
-            Great Product
-          </h2>
-          <p className="font-Lato leading-[30px]">
-            Lorem ipsum dolor sit amet consectetur. Arcu nisi magna lectus
-            vestibulum. Mattis consectetur elit a nulla lorem. Eu tristique at
-            sed orci elit massa nulla tellus. Elit ac in ipsum consequat aliquet
-            faucibus ut proin nullam. Pellentesque lectus cras volutpat egestas
-            elit.
-          </p>
+          <div>
+            <h2 className="font-Lato font-7 text-[27px] mb-[5px]">
+              Great Product
+            </h2>
+            <p className="font-Lato leading-[30px]">
+              Lorem ipsum dolor sit amet consectetur. Arcu nisi magna lectus
+              vestibulum. Mattis consectetur elit a nulla lorem. Eu tristique at
+              sed orci elit massa nulla tellus. Elit ac in ipsum consequat
+              aliquet faucibus ut proin nullam. Pellentesque lectus cras
+              volutpat egestas elit.
+            </p>
+          </div>
         </div>
       </Slider>
     </section>
