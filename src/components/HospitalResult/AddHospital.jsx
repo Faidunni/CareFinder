@@ -74,8 +74,8 @@ const AddHospital = () => {
           </div>
         </div>
         <hr />
-        <div className="flex justify-between px-10 lg:px-[40px] py-5">
-          <p className="text-icon">
+        <div className="flex justify-between px-10 lg:px-[40px] py-5 flex-col lg:flex-row md:flex-row">
+          <p className="text-icon mb-2">
             &#169; Faizat Hazeez. All rights reserved.
           </p>
           <div className="">
@@ -88,24 +88,3 @@ const AddHospital = () => {
 };
 
 export default AddHospital;
-
-// import React from "react";
-// import Footer from "../Footer/Footer";
-
-// const AddHospital = () => {
-//   return (
-//     <>
-//       <div className="bg-navigation flex align-center flex-col px-10 py-10">
-//         <h2>Want to list an hospital instead?</h2>
-//         <div>
-//           <button className="font-7 font-Lato text-16px leading-24px bg-black text-secondary px-8 py-3 rounded-full">
-//             Get Started Now
-//           </button>
-//         </div>
-//       </div>
-//       <Footer />
-//     </>
-//   );
-// };
-
-// export default AddHospital;

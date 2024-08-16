@@ -35,7 +35,7 @@ const Dashboard = ({ searchResult, setSearchResult }) => {
   };
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-x-hidden w-[100vw] h-[100vh]">
       <NavBar />
       <Hero />
       <AboutUs />
@@ -53,7 +53,7 @@ const Dashboard = ({ searchResult, setSearchResult }) => {
         <div className="relative group w-full mx-auto mb-7 sm:w-[400px] sm:mx-auto lg:mx-auto md:mx-auto -ml-2">
           <input
             type="text"
-            placeholder="Enter location, city or State"
+            placeholder="Enter Location, City or State"
             className="w-full sm:w-[400px]  rounded-full border border-gray-300 py-2 px-4 focus:outline-none focus:border-1 font-Lato font-4 shadow-lg "
             onChange={handleInputChange}
             value={inputValue}
