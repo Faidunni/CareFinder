@@ -27,7 +27,7 @@ const SliderCard = () => {
           <div className="flex gap-4 mb-[10px]">
             <div>
               <img
-                src={card3}
+                src={card1}
                 alt=""
                 className="w-[100px] h-[100px] rounded-full object-contain border-2"
               />
@@ -54,7 +54,7 @@ const SliderCard = () => {
           <div className="flex gap-4 mb-[10px]">
             <div>
               <img
-                src={card5}
+                src={card2}
                 alt=""
                 className="w-[100px] h-[100px] rounded-full object-contain border-2"
               />
@@ -108,7 +108,7 @@ const SliderCard = () => {
           <div className="flex gap-4 mb-[10px]">
             <div>
               <img
-                src={card6}
+                src={card4}
                 alt=""
                 className="w-[100px] h-[100px] rounded-full object-contain border-2"
               />
