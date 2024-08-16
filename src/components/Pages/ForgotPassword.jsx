@@ -30,7 +30,7 @@ const ForgotPassword = () => {
         <PageNav />
       </div>
 
-      <div className="relative px-10 py-10 lg:w-[700px] h-[420px]  bg-white rounded-xl w-[100%] mt-[50px] lg:mx-[23%]">
+      <div className="relative px-10 py-10 lg:w-[700px] h-[420px]  lg:bg-white md:bg-white rounded-xl w-[100%] mt-[50px] lg:mx-[23%]">
         <Link to="/">
           <IoClose className="text-5xl absolute right-4 top-4" />
         </Link>
@@ -45,7 +45,7 @@ const ForgotPassword = () => {
           className="mt-[30px]"
           onSubmit={(e) => handleSubmit(e)}
         >
-          <div className="mb-10">
+          <div className="mb-5">
             <label className="text-[12px] font-Montserrat font-bold">
               YOUR PHONE/EMAIL
             </label>
@@ -58,7 +58,7 @@ const ForgotPassword = () => {
             />
           </div>
 
-          <div className="w-[150px] h-[59px] mx-auto mb-5 mt-5">
+          <div className="w-[150px] h-[59px] mx-auto mb-5">
             <button
               type="submit"
               className="bg-black text-white rounded-lg w-[150px] h-[59px] mx-auto cursor-pointer"

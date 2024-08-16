@@ -51,7 +51,7 @@ function SignUp() {
       </div>
       <form
         onSubmit={handleRegister}
-        className="relative px-10 py-10 lg:w-[700px] h-[880px] bg-white rounded-xl w-[100%] mt-[50px] lg:mx-[23%]"
+        className="relative px-10 py-10 lg:w-[700px] h-[880px] lg:bg-white md:bg-white rounded-xl w-[100%] mt-[50px] lg:mx-[23%]"
       >
         <Link to="/">
           <IoClose className="text-5xl absolute right-4 top-4" />
