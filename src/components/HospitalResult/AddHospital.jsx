@@ -13,10 +13,10 @@ const AddHospital = () => {
       <div>
         <div className="bg-content flex align-center flex-col">
           <div className="px-10 py-[60px] mx-auto">
-            <h2 className="mb-8 font-Roboto text-[#344054] lg:text-[40px] text-[25px]">
+            <h2 className="mb-8 font-Roboto text-[#344054] lg:text-[40px] text-[20px]">
               Want to list an hospital instead?
             </h2>{" "}
-            <div className="lg:ml-[30%] ml-[28%]">
+            <div className="lg:ml-[30%] ml-[18%]">
               {" "}
               <button className="font-7 font-Lato text-16px leading-24px bg-black text-secondary px-8 py-3 rounded-full">
                 Get Started Now{" "}
@@ -30,9 +30,9 @@ const AddHospital = () => {
           CF
         </h1>
         <hr />
-        <div className="px-10 py-5 grid grid-cols-4 font-Lato ">
+        <div className="px-10 py-5 grid lg:grid-cols-4 font-Lato grid-cols-2 md:grid-cols-3 ">
           <div>
-            <ul>
+            <ul className="mb-10 lg:mb-0">
               <li className="font-bold pb-[10px]">About</li>
               <li className="pb-[5px] text-icon">Services</li>
               <li className="pb-[5px] text-icon">Portfolio</li>
