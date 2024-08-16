@@ -12,13 +12,13 @@ const HowToSignUp = () => {
           {" "}
           Got a Hospital to list?
         </h1>
-        <NavLink to="/login">
-          <div className="absolute bottom-[1%] lg:top-[9%] lg:right-[15%] sm:mb-[10px] md:top-[9%] md:right-[5%]">
+        <div className="absolute bottom-[1%] lg:top-[9%] lg:right-[15%] sm:mb-[10px] md:top-[9%] md:right-[5%]">
+          <NavLink to="/login">
             <button className="font-7 font-Lato text-16px leading-24px bg-black text-secondary px-8 py-3 rounded-full">
               Get Started Now
             </button>
-          </div>
-        </NavLink>
+          </NavLink>
+        </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-[50px] lg:mb-0">
         <div className="bg-card px-[40px] py-[40px] lg:mt-[60px] rounded-2xl">
