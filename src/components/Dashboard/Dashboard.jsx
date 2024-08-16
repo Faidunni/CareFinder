@@ -50,11 +50,11 @@ const Dashboard = ({ searchResult, setSearchResult }) => {
           lorem. Mattis volutpat venenatis facilisis orci facilisis eleifend
           elit amet.
         </p>
-        <div className="relative group w-[400px] mx-auto mb-7">
+        <div className="relative group w-[200px] mx-auto mb-7 -ml-2 sm:w-[400px]">
           <input
             type="text"
             placeholder="Enter location, a zip code. city or State"
-            className="w-[300px] sm:w-[400px]  rounded-full border border-gray-300 py-2 px-4 focus:outline-none focus:border-1 font-Lato font-4 shadow-lg"
+            className="w-[300px] sm:w-[400px]  rounded-full border border-gray-300 py-2 px-4 focus:outline-none focus:border-1 font-Lato font-4 shadow-lg "
             onChange={handleInputChange}
             value={inputValue}
           />
