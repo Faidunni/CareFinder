@@ -54,7 +54,7 @@ const Dashboard = ({ searchResult, setSearchResult }) => {
           <input
             type="text"
             placeholder="Enter location, a zip code. city or State"
-            className="w-[400px] sm:w-[400px]  rounded-full border border-gray-300 py-2 px-4 focus:outline-none focus:border-1 font-Lato font-4 shadow-lg"
+            className="w-[300px] sm:w-[400px]  rounded-full border border-gray-300 py-2 px-4 focus:outline-none focus:border-1 font-Lato font-4 shadow-lg"
             onChange={handleInputChange}
             value={inputValue}
           />
