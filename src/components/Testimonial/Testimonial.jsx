@@ -64,7 +64,7 @@ import SliderCard from "../Slider/SliderCard";
 
 const Testimonial = () => {
   return (
-    <section className="py-10 px-[80px]">
+    <section className="py-10 sm:px-[80px] px-10">
       <h1 className="font-Lato font-9 text-[40px] mb-[10px]">
         Hear from Our Valued Clients
       </h1>
@@ -73,33 +73,6 @@ const Testimonial = () => {
         odit earum et sunt eius fuga reiciendis, rerum obcaecati iste amet,
         maxime deserunt, quasi a.
       </p>
-
-      {/* <div className="bg-slate-200">
-        <Slider {...settings}>
-          <div className="w-3/4 m-auto">
-            {data.map((item, index) => {
-              return (
-                <div key={index}>
-                  <div className="flex gap-4">
-                    <div>
-                      <img
-                        src={item.image}
-                        className="w-[80px] h-[80px] rounded-full object-contain border-black border"
-                      />
-                    </div>
-                    <div>
-                      <h2>{item.name}</h2>
-                      <p>{item.role}</p>
-                    </div>
-                  </div>
-                  <h2>{item.heading}</h2>
-                  <p>{item.review}</p>
-                </div>
-              );
-            })}
-          </div>
-        </Slider>
-      </div> */}
       <SliderCard />
     </section>
   );

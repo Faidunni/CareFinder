@@ -47,8 +47,7 @@ const SliderCard = () => {
             vestibulum. Mattis consectetur elit a nulla lorem. Eu tristique at
             sed orci elit massa nulla tellus. Elit ac in ipsum consequat aliquet
             faucibus ut proin nullam. Pellentesque lectus cras volutpat egestas
-            elit. Et enim morbi gravida et. In morbi in sed ut lobortis amet. Et
-            molestie id sed quis.
+            elit.
           </p>
         </div>
         <div className="lg:px-[150px] lg:py-[60px] px-[40px] py-[40px]">
@@ -75,8 +74,7 @@ const SliderCard = () => {
             vestibulum. Mattis consectetur elit a nulla lorem. Eu tristique at
             sed orci elit massa nulla tellus. Elit ac in ipsum consequat aliquet
             faucibus ut proin nullam. Pellentesque lectus cras volutpat egestas
-            elit. Et enim morbi gravida et. In morbi in sed ut lobortis amet. Et
-            molestie id sed quis.
+            elit.
           </p>
         </div>
         <div className="lg:px-[150px] lg:py-[60px] px-[40px] py-[40px]">
@@ -103,8 +101,7 @@ const SliderCard = () => {
             vestibulum. Mattis consectetur elit a nulla lorem. Eu tristique at
             sed orci elit massa nulla tellus. Elit ac in ipsum consequat aliquet
             faucibus ut proin nullam. Pellentesque lectus cras volutpat egestas
-            elit. Et enim morbi gravida et. In morbi in sed ut lobortis amet. Et
-            molestie id sed quis.
+            elit.
           </p>
         </div>
         <div className="lg:px-[150px] lg:py-[60px] px-[40px] py-[40px]">
@@ -131,8 +128,7 @@ const SliderCard = () => {
             vestibulum. Mattis consectetur elit a nulla lorem. Eu tristique at
             sed orci elit massa nulla tellus. Elit ac in ipsum consequat aliquet
             faucibus ut proin nullam. Pellentesque lectus cras volutpat egestas
-            elit. Et enim morbi gravida et. In morbi in sed ut lobortis amet. Et
-            molestie id sed quis.
+            elit.
           </p>
         </div>
         <div className="lg:px-[150px] lg:py-[60px] px-[40px] py-[40px]">
@@ -159,8 +155,7 @@ const SliderCard = () => {
             vestibulum. Mattis consectetur elit a nulla lorem. Eu tristique at
             sed orci elit massa nulla tellus. Elit ac in ipsum consequat aliquet
             faucibus ut proin nullam. Pellentesque lectus cras volutpat egestas
-            elit. Et enim morbi gravida et. In morbi in sed ut lobortis amet. Et
-            molestie id sed quis.
+            elit.
           </p>
         </div>
         <div className="lg:px-[150px] lg:py-[60px] px-[40px] py-[40px]">
@@ -187,8 +182,7 @@ const SliderCard = () => {
             vestibulum. Mattis consectetur elit a nulla lorem. Eu tristique at
             sed orci elit massa nulla tellus. Elit ac in ipsum consequat aliquet
             faucibus ut proin nullam. Pellentesque lectus cras volutpat egestas
-            elit. Et enim morbi gravida et. In morbi in sed ut lobortis amet. Et
-            molestie id sed quis.
+            elit.
           </p>
         </div>
       </Slider>
