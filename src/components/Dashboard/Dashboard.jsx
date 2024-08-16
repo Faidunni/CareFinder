@@ -50,10 +50,10 @@ const Dashboard = ({ searchResult, setSearchResult }) => {
           lorem. Mattis volutpat venenatis facilisis orci facilisis eleifend
           elit amet.
         </p>
-        <div className="relative group w-[200px] mx-auto mb-7 -ml-2 sm:w-[400px]">
+        <div className="relative group w-[200px] mx-auto mb-7 sm:w-[400px] sm:mx-auto lg:mx-auto md:mx-auto -ml-2">
           <input
             type="text"
-            placeholder="Enter location, a zip code. city or State"
+            placeholder="Enter location, city or State"
             className="w-[300px] sm:w-[400px]  rounded-full border border-gray-300 py-2 px-4 focus:outline-none focus:border-1 font-Lato font-4 shadow-lg "
             onChange={handleInputChange}
             value={inputValue}
@@ -64,11 +64,11 @@ const Dashboard = ({ searchResult, setSearchResult }) => {
               className="btn form-btn"
               onClick={handleSearch}
             >
-              <FaSearch className="text-secondary absolute bg-black pt-2 pb-2 pl-1 pr-1 text-3xl rounded-full border top-[5px] right-[10px]" />
+              <FaSearch className="text-secondary absolute bg-black pt-2 pb-2 pl-1 pr-1 text-3xl rounded-full border top-[5px] sm:right-[10px] -right-[45%]" />
             </button>
           </NavLink>
         </div>
-        <img src={Map} alt="Map" />
+        <img src={Map} alt="Map" className="h-" />
       </section>
 
       <HowToSignUp />

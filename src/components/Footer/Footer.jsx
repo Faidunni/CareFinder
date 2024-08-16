@@ -15,9 +15,9 @@ const Footer = () => {
         CF
       </h1>
       <hr />
-      <div className="px-10 py-5 grid grid-cols-4 font-Lato ">
+      <div className="px-10 py-5 grid lg:grid-cols-4 font-Lato grid-cols-2 md:grid-cols-3">
         <div>
-          <ul>
+          <ul className="mb-10 lg:mb-0">
             <li className="font-bold pb-[10px]">About</li>
             <li className="pb-[5px] text-icon">Services</li>
             <li className="pb-[5px] text-icon">Portfolio</li>
@@ -59,8 +59,10 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="flex justify-between px-10 lg:px-[40px] py-5">
-        <p className="text-icon">&#169; Faizat Hazeez. All rights reserved.</p>
+      <div className="flex justify-between px-10 lg:px-[40px] py-5 flex-col lg:flex-row md:flex-row">
+        <p className="text-icon mb-2">
+          &#169; Faizat Hazeez. All rights reserved.
+        </p>
         <div className="">
           <img src={image} alt="" />
         </div>

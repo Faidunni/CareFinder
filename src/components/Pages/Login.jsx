@@ -38,7 +38,7 @@ const Login = () => {
       </div>
       <form
         onSubmit={handleSubmit}
-        className="relative px-10 py-10 lg:w-[700px] h-[650px] bg-white rounded-xl w-[100%] mt-[50px] lg:mx-[23%]"
+        className="relative px-10 py-10 lg:w-[700px] h-[650px]  rounded-xl w-[100%] mt-[50px] lg:mx-[23%] lg:bg-white md:bg-white"
       >
         <Link to="/">
           <IoClose className="text-5xl absolute right-4 top-4" />
@@ -46,7 +46,7 @@ const Login = () => {
         <h1 className="font-Rochester text-5xl font-bold text-center mt-10 mb-5">
           CF
         </h1>
-        <h2 className="font-Montserrat text-[24px] font-bold text-center">
+        <h2 className="font-Montserrat text-[24px] font-bold text-center mb-5">
           Enter Your Details
         </h2>
         <div className="mb-10">

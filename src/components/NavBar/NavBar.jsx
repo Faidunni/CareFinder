@@ -54,7 +54,7 @@ const NavBar = () => {
           {userDetails ? (
             <Modal />
           ) : (
-            <NavLink to="/signup">
+            <NavLink to="/login">
               <button className="font-7 font-Lato text-16px leading-24px bg-black text-secondary px-8 py-3 rounded-full">
                 Login/Sign Up
               </button>

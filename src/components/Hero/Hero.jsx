@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../../assets/images/img-1.png";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -15,12 +16,15 @@ const Hero = () => {
             aliquet tincidunt ornare odio fames dignissim. Iaculis luctus massa
             at purus at blandit.
           </p>
-          <div>
-            <button className="font-7 font-Lato text-16px leading-24px bg-black text-secondary px-8 py-3 rounded-full">
-              Get Started Now
-            </button>
-          </div>
+          <NavLink to="/login">
+            <div>
+              <button className="font-7 font-Lato text-16px leading-24px bg-black text-secondary px-8 py-3 rounded-full">
+                Get Started Now
+              </button>
+            </div>
+          </NavLink>
         </div>
+
         {/* Image section */}
         <img
           src={image}
