@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <main className="mt-[80px]">
+    <main className="pt-[80px]">
       <div className="bg-primary grid grid-cols-1 sm:grid-cols-2 gap-[10%]">
         <div className="sm:px-10 my-auto px-5">
           <h1 className="font-9 text-[30px] leading-30px font-Lato sm:mt-0 mt-5">
