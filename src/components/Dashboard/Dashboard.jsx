@@ -39,7 +39,7 @@ const Dashboard = ({ searchResult, setSearchResult }) => {
       <NavBar />
       <Hero />
       <AboutUs />
-      <section className="lg:px-[80px] py-[30px] px-10">
+      <section className="lg:px-[80px] py-[30px] px-5">
         <h2 className="font-Lato font-7 lg:text-[25px] mb-2 text-[23px]">
           Find hospitals close to your residence
         </h2>

@@ -4,10 +4,9 @@ import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <main>
+    <main className="mt-[80px]">
       <div className="bg-primary grid grid-cols-1 sm:grid-cols-2 gap-[10%]">
-        {/* className="bg-primary flex justify-between gap-[10%]" */}
-        <div className="px-10 my-auto">
+        <div className="sm:px-10 my-auto px-5">
           <h1 className="font-9 text-[30px] leading-30px font-Lato sm:mt-0 mt-5">
             We Care About You
           </h1>
@@ -18,7 +17,7 @@ const Hero = () => {
           </p>
           <NavLink to="/login">
             <div>
-              <button className="font-7 font-Lato text-16px leading-24px bg-black text-secondary px-8 py-3 rounded-full">
+              <button className="font-7 font-Lato text-16px leading-24px bg-black text-secondary sm:px-8 py-3 rounded-full px-5">
                 Get Started Now
               </button>
             </div>
@@ -28,8 +27,8 @@ const Hero = () => {
         {/* Image section */}
         <img
           src={image}
-          alt=""
-          className="lg:w-[732.15px] lg:h-[437.67px] sm:w-[370px] sm:h-[487.67px] md:w-[400px] md:h-[487.67px] px-[30px] md:my-[20px] lg:my-0 lg:px-0 object-cover mb-[80px]"
+          alt="image"
+          className="lg:w-[732.15px] lg:h-[437.67px] sm:w-[370px] sm:h-[487.67px] md:w-[400px] md:h-[487.67px] px-[20px] md:my-[20px] lg:my-0 lg:px-0 object-cover mb-[80px]"
         />
       </div>
     </main>

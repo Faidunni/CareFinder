@@ -1,4 +1,3 @@
-import React from "react";
 import image1 from "../../assets/images/plus.png";
 import image2 from "../../assets/images/truck.png";
 import image3 from "../../assets/images/firstaid.png";
@@ -6,14 +5,14 @@ import { NavLink } from "react-router-dom";
 
 const HowToSignUp = () => {
   return (
-    <section className="bg-primary lg:px-[180px] py-[40px] relative px-[40px]">
+    <section className="bg-primary lg:px-[180px] py-[40px] relative px-5">
       <div className="flex justify-between mb-[50px]">
         <h1 className="font-7 text-[33px] leading-[36.2px] text-gray-600 lg:text-[35px]">
           {" "}
           Got a Hospital to list?
         </h1>
         <div className="absolute bottom-[1%] lg:top-[9%] lg:right-[15%] mb-[10px] md:top-[9%] md:right-[5%]">
-          <NavLink to="/login">
+          <NavLink to="/admin-login">
             <button className="font-7 font-Lato text-16px leading-24px bg-black text-secondary px-8 py-3 rounded-full">
               Get Started Now
             </button>

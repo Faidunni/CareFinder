@@ -5,7 +5,7 @@ import { doc, getDoc } from "firebase/firestore";
 import Modal from "../Modal/Modal";
 
 const Menu = [
-  { id: 1, name: "Resources", link: "/#" },
+  { id: 1, name: "Resources", link: "/" },
   { id: 2, name: "Contact Us", link: "/#contact" },
   { id: 3, name: "About Us", link: "/#about" },
 ];
@@ -30,7 +30,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="flex justify-between items-center bg-primary py-5 px-10 font-Lato relative w-[100%]">
+    <nav className="flex justify-between items-center bg-primary py-5 sm:px-10 font-Lato w-full px-5 fixed z-10 top-0 left-0 mb-10">
       <Link to="/">
         <h1 className="font-Rochester text-3xl sm:text-3xl flex gap-3 font-9">
           CF

@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "../Auth/firebase";
 import { IoClose, IoEyeOff, IoEye } from "react-icons/io5";
-import { FaInstagramSquare, FaFacebook, FaTwitterSquare } from "react-icons/fa";
+
 import { Link, useNavigate } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import { doc, setDoc } from "firebase/firestore";
 import { toast } from "react-toastify";
-import PageNav from "./PageNav";
+import PageNav from "../Pages/PageNav";
 
-function SignUp() {
+function AdminSignup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fname, setFname] = useState("");
@@ -22,7 +22,14 @@ function SignUp() {
     setShowPassword((prevState) => !prevState);
   };
 
-  const handleRegister = async (e) => {
+  // email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    toast.error("Please enter a valid email address.");
+    return;
+  }
+
+  const adminRegister = async (e) => {
     e.preventDefault();
     try {
       await createUserWithEmailAndPassword(auth, email, password);
@@ -36,8 +43,8 @@ function SignUp() {
           password: password,
         });
       }
-      navigate("/");
-      toast.success("User Registered Successfully!!");
+      navigate("/listhospital");
+      toast.success("You are now an Admin!!");
     } catch (error) {
       console.log(error.message);
       toast.error("User Already Exists");
@@ -50,17 +57,17 @@ function SignUp() {
         <PageNav />
       </div>
       <form
-        onSubmit={handleRegister}
-        className="relative sm:px-10 sm:py-10 lg:w-[700px] h-[750px] lg:bg-white md:bg-white rounded-xl w-[100%] sm:mt-[50px] lg:mx-[23%] mt-[10px] py-0 px-5"
+        onSubmit={adminRegister}
+        className="relative px-10 py-10 lg:w-[700px] h-[800px] lg:bg-white md:bg-white rounded-xl w-[100%] mt-[50px] lg:mx-[23%]"
       >
         <Link to="/">
-          <IoClose className="text-5xl absolute right-4 top-0" />
+          <IoClose className="text-5xl absolute right-4 top-4" />
         </Link>
         <h1 className="font-Rochester text-5xl font-bold text-center mt-10 mb-5">
           CF
         </h1>
         <h2 className="font-Montserrat text-[24px] font-bold text-center">
-          Create Account
+          Become an Admin
         </h2>
         <div className="mt-10">
           <label className="text-[12px] font-Montserrat font-bold">
@@ -125,18 +132,12 @@ function SignUp() {
         <p className="mt-4 text-center">
           Already have an account?{" "}
           <button className="hover:text-navigation font-bold">
-            <Link to="/login"> Login </Link>
+            <Link to="/admin-login"> Login </Link>
           </button>
         </p>
-        <p className="text-center mt-3">--- OR ---</p>
-        <div className="flex gap-3 justify-center mt-[20px] text-4xl text-black ">
-          <FaInstagramSquare />
-          <FaFacebook />
-          <FaTwitterSquare />
-        </div>
       </form>
       <Footer />
     </main>
   );
 }
-export default SignUp;
+export default AdminSignup;

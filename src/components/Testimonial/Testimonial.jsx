@@ -64,7 +64,7 @@ import SliderCard from "../Slider/SliderCard";
 
 const Testimonial = () => {
   return (
-    <section className="py-10 sm:px-[80px] px-10">
+    <section className="py-10 sm:px-[80px] px-5">
       <h1 className="font-Lato font-9 text-[40px] mb-[10px]">
         Hear from Our Valued Clients
       </h1>

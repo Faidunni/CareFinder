@@ -16,6 +16,9 @@ import { auth } from "./components/Auth/firebase";
 import NavBar from "./components/NavBar/NavBar";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import HospitalList from "./components/HospitalResult/HospitalList";
+import AdminLogin from "./components/Admin-Page/Login";
+import AdminSignup from "./components/Admin-Page/Signup";
+import ListHospital from "./components/Admin-Page/ListHospital";
 
 const App = () => {
   const [user, setUser] = useState();
@@ -41,6 +44,10 @@ const App = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/forgot" element={<ForgotPassword />} />
+        <Route path="/admin-login" element={<AdminLogin />} />
+        <Route path="/admin-signup" element={<AdminSignup />} />
+        <Route path="/listhospital" element={<ListHospital />} />
+
         <Route
           path="/navbar"
           element={user ? <Navigate to="/" /> : <NavBar />}
@@ -81,10 +88,3 @@ const App = () => {
 };
 
 export default App;
-
-{
-  /* </BrowserRouter> */
-}
-{
-  /* */
-}

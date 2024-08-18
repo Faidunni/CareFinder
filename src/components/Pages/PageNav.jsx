@@ -23,7 +23,7 @@ const Menu = [
 
 const PageNav = () => {
   return (
-    <nav className="flex justify-between items-center bg-primary py-5 px-10 font-Lato">
+    <nav className="flex justify-between items-center bg-primary py-5 sm:px-10 font-Lato px-5">
       <Link to="/">
         <h1 className="font-Rochester text-3xl sm:text-3xl flex gap-3 font-9">
           CF

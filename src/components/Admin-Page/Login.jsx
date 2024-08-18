@@ -6,10 +6,9 @@ import Footer from "../Footer/Footer";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Auth/firebase";
 import { toast } from "react-toastify";
-import PageNav from "./PageNav";
-import { FaInstagramSquare, FaFacebook, FaTwitterSquare } from "react-icons/fa";
+import PageNav from "../Pages/PageNav";
 
-const Login = () => {
+const AdminLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -19,12 +18,12 @@ const Login = () => {
     setShowPassword((prevState) => !prevState);
   };
 
-  const handleSubmit = async (e) => {
+  const adminSubmit = async (e) => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/");
-      toast.success("Login Successfully");
+      navigate("/listhospital");
+      toast.success("Add your hospital");
     } catch (error) {
       console.log(error.message);
       toast.error("Invalid Credentials");
@@ -37,17 +36,17 @@ const Login = () => {
         <PageNav />
       </div>
       <form
-        onSubmit={handleSubmit}
-        className="relative sm:px-10 sm:py-10 lg:w-[700px] sm:h-[650px]  rounded-xl w-[100%] sm:mt-[50px] lg:mx-[23%] lg:bg-white md:bg-white py-0 mt-[10px] h-[500px] px-5"
+        onSubmit={adminSubmit}
+        className="relative px-10 py-10 lg:w-[700px] h-[550px]  rounded-xl w-[100%] mt-[50px] lg:mx-[23%] lg:bg-white md:bg-white"
       >
         <Link to="/">
-          <IoClose className="text-5xl absolute right-4 top-0" />
+          <IoClose className="text-5xl absolute right-4 top-4" />
         </Link>
         <h1 className="font-Rochester text-5xl font-bold text-center mt-10 mb-5">
           CF
         </h1>
         <h2 className="font-Montserrat text-[24px] font-bold text-center mb-5">
-          Enter Your Details
+          Welcome Admin
         </h2>
         <div className="mb-10">
           <label className="text-[12px] font-Montserrat font-bold">
@@ -92,21 +91,15 @@ const Login = () => {
           Login
         </button>
         <p className="mt-4 text-center">
-          Don't have an account?{" "}
+          Want to list your hospital?{" "}
           <button className="hover:text-navigation font-bold" id="btn">
-            <Link to="/signup"> Sign Up</Link>
+            <Link to="/admin-signup"> Sign Up</Link>
           </button>
         </p>
-        <p className="text-center mt-3">--- OR ---</p>
-        <div className="flex gap-3 justify-center mt-[20px] text-4xl text-black ">
-          <FaInstagramSquare />
-          <FaFacebook />
-          <FaTwitterSquare />
-        </div>
       </form>
       <Footer />
     </main>
   );
 };
 
-export default Login;
+export default AdminLogin;

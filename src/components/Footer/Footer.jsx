@@ -11,11 +11,11 @@ import image from "../../assets/images/Frame 3.png";
 const Footer = () => {
   return (
     <section className="bg-black mt-[60px] py-5 text-white">
-      <h1 className="font-Rochester font-medium text-3xl text-white px-10 mb-[20px] ">
+      <h1 className="font-Rochester font-medium text-3xl text-white sm:px-10 mb-[20px] px-5">
         CF
       </h1>
       <hr />
-      <div className="px-10 py-5 grid lg:grid-cols-4 font-Lato grid-cols-2 md:grid-cols-3">
+      <div className="sm:px-10 py-5 grid lg:grid-cols-4 font-Lato grid-cols-2 md:grid-cols-3 px-5">
         <div>
           <ul className="mb-10 lg:mb-0">
             <li className="font-bold pb-[10px]">About</li>
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="flex justify-between px-10 lg:px-[40px] py-5 flex-col lg:flex-row md:flex-row">
+      <div className="flex justify-between sm:px-10 lg:px-[40px] py-5 flex-col lg:flex-row md:flex-row px-5">
         <p className="text-icon mb-2">
           &#169; Faizat Hazeez. All rights reserved.
         </p>
