@@ -35,6 +35,7 @@ const AdminLogin = () => {
       <div className="border-b-2 border-white">
         <PageNav />
       </div>
+      {/* Admin Login Form */}
       <form
         onSubmit={adminSubmit}
         className="relative px-10 py-10 lg:w-[700px] h-[550px]  rounded-xl w-[100%] mt-[50px] lg:mx-[23%] lg:bg-white md:bg-white"
