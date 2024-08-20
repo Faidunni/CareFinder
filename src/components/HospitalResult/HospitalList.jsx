@@ -106,7 +106,7 @@ const HospitalList = ({ searchResult, setSearchResult }) => {
         </button>
       </div>
 
-      <div className="flex justify-between px-10 py-4 flex-col lg:flex-row">
+      <div className="flex justify-between sm:px-10 py-4 flex-col lg:flex-row px-5">
         <div className="font-Lato text-2xl font-7 lg:mx-0 mx-auto lg:mb-0 mb-5">
           <p>
             <span>{searchResult.length}</span> Hospitals in <br /> Your Location

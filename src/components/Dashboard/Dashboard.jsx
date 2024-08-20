@@ -35,7 +35,7 @@ const Dashboard = ({ searchResult, setSearchResult }) => {
   };
 
   return (
-    <div className="overflow-x-hidden w-[100vw] h-[100vh">
+    <div className="overflow-x-hidden w-[100vw] h-[100vh] bg-primary">
       <NavBar />
       <Hero />
       <AboutUs />
