@@ -21,6 +21,13 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // input empty
+    if (!email || !password) {
+      toast.error("Please fill in all fields.");
+      return;
+    }
+
     try {
       await signInWithEmailAndPassword(auth, email, password);
       navigate("/");
@@ -38,7 +45,7 @@ const Login = () => {
       </div>
       <form
         onSubmit={handleSubmit}
-        className="relative sm:px-10 sm:py-10 lg:w-[700px] sm:h-[650px]  rounded-xl w-[100%] sm:mt-[50px] lg:mx-[23%] lg:bg-white md:bg-white py-0 mt-[10px] h-[500px] px-5"
+        className="relative sm:px-10 sm:py-10 lg:w-[700px] sm:h-[650px] rounded-xl w-[100%] sm:mt-[50px] lg:mx-[23%] lg:bg-white md:bg-white py-0 mt-[10px] h-[500px] px-5"
       >
         <Link to="/">
           <IoClose className="text-5xl absolute right-4 top-0" />
